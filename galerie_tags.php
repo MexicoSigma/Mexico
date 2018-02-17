@@ -37,12 +37,24 @@
     <div class="gallery">
         <?php
         //Include database configuration file
-        include('db_config.php');
-        
-        //get images from database
-        $query = $db->query("SELECT * FROM photo, photojournaliste WHERE photo.ID_PJ=photojournaliste.ID_PJ;");
-		
-        
+        include ("db_config.php");
+
+$tag = isset($_POST['gettags']) ? $_POST['gettags'] : false;
+//$tarifsel = isset($_POST['tarifValue']) ? $_POST['tarifValue'] : false;
+
+if ($getlang == "fr" || $lang == "fr")
+{
+	 $query = $db->query("SELECT * from sujet, sujetphoto, photo, photojournaliste WHERE photojournaliste.ID_PJ=photo.ID_PJ AND 
+	 sujet.ID_SUJET=sujetphoto.ID_SUJET AND sujetphoto.ID_PHOTO=photo.ID_PHOTO AND 
+	 sujet.LIBELLE_FR='$tag';");
+	 
+}
+elseif ($getlang == "es" || $lang == "es")
+{    $query = $db->query("SELECT * from sujet, sujetphoto, photo, photojournaliste WHERE photojournaliste.ID_PJ=photo.ID_PJ AND 
+	 sujet.ID_SUJET=sujetphoto.ID_SUJET AND sujetphoto.ID_PHOTO=photo.ID_PHOTO AND 
+	 sujet.LIBELLE_ES='$tag';");       	
+}
+
         if($query->num_rows > 0){
             while($row = $query->fetch_assoc()){
                 $imageThumbURL = 'thumb/'.$row['NOM_PHOTO'];
@@ -56,6 +68,8 @@
 				$descEs= $row['DESCRIPTION_ES'];
 				$auteurP= $row['PRENOM_PJ'];
 				$auteurN= $row['NOM_PJ'];
+				
+
         ?>
             <a class ="fancybox" href="<?php echo $imageURL; ?>" data-fancybox="group" data-caption="
 			<?php if ($getlang == "fr" || $lang == "fr")
@@ -89,12 +103,14 @@ echo '<strong>'.$xml->adresse_g->$lang.':&nbsp;</strong>'.$adresseEs;
 			
 			
         <?php }
-        } ?>
+	} ?>
 
     </div>
 	
-	
+<p><a href="?page=gettags"><?php echo $xml->recherche->$lang;?></a>	
 </div>
+
+
 </center>
 
 <script>
@@ -110,3 +126,6 @@ echo '<strong>'.$xml->adresse_g->$lang.':&nbsp;</strong>'.$adresseEs;
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
 </html>
+
+
+

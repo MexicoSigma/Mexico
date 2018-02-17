@@ -40,6 +40,10 @@
 <es>Desconexión</es>
 </onglet_6>
 
+<onglet_7>
+<fr>Tags</fr>
+<es>Etiquetas</es>
+</onglet_7>
 
 <galerie>
 <fr>Galerie</fr>
@@ -149,4 +153,15 @@ A partir del año 2000, el trabajo de Elsa Medina se vuelve más documental y ar
 <fr>Vision panoramique</fr>
 <es>Visión panorámica</es>
 </pano_g>
+
+<s_tags>
+<fr>Sélection par tags</fr>
+<es>Selección por etiquetas</es>
+</s_tags>
+
+<recherche>
+<fr>Autre recherche</fr>
+<es>Otra investigación</es>
+</recherche>
+
 </root>
