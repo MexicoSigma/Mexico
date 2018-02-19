@@ -1,24 +1,21 @@
 <?php
-//parametres pour la connexion  locale
-$host="localhost";     // connexion locale
-$user ="root"; // utilisateur par défaut
-$pass="";        // pas de mot de passe en local
-$dbname="mexico";   // base de données locale   
+$host='localhost';
+$dbname='mexico';
+$username='root';
+$password='Y@w0gan8896';
+$port=3306;
+$dsn = 'mysql:host='.$host.';dbname='.$dbname.';port='.$port.';charset=utf8';
 
-$dsn = "mysql:host=".$host.";dbname=".$dbname;
-
-try{
-$myPDO = new PDO($dsn,$user,$pass,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
-}
+try {
+    $myPDO = new PDO($dsn,$username,$password,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
+    }
 catch (PDOException $e) {
-    echo 'Échec de la connexion : ' . $e->getMessage();
-    exit;
+    print "Erreur de connexion : " . $e->getMessage() . "<br/>";
+    die();
 }
-// if connexion is ok
 finally {
-// php equivalent to if __name__ == "__main__" in python : 
 if (!debug_backtrace()) {
-	echo "connexion ok";
+	echo "Connected successfully";
 }
 }
 ?>
