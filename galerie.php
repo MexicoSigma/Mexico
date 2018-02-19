@@ -40,7 +40,7 @@
         include('db_config.php');
         
         //get images from database
-        $query = $db->query("SELECT * FROM photo, photojournaliste WHERE photo.ID_PJ=photojournaliste.ID_PJ;");
+        $query = $db->query("SELECT * FROM photo, photojournaliste WHERE photo.ID_PJ=photojournaliste.ID_PJ ORDER BY photo.ORDRE;");
 		
         
         if($query->num_rows > 0){

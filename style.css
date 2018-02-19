@@ -40,8 +40,18 @@ hr {
 }
 
 #onglet { 
-	margin-top : 25%;
-	font-size:25px;
+	margin-top : 18%;
+	margin-bottom : 18%;
+	font-size:22px;
+}
+/*#onglet_2 { 
+	margin-top : 10%;
+	font-size:24px;
+	*/
+}
+#hr_menu {
+	
+	width : 80%;
 }
 
 .arrow-left {
@@ -170,6 +180,10 @@ width : 10%;
 }
 
 .btnsearch:hover {background-color: #21486b;}
+
+#titre_long {
+ max-width : 70%;
+}
 
 
 

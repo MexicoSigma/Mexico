@@ -8,17 +8,9 @@
 </head> 
 <?php 
 include('db_config.php');
-$query = $db->query("SELECT * FROM photojournaliste;");
-		
-        
-        if($query->num_rows > 0){
-            while($row = $query->fetch_assoc()){
-                $desfr = $row['DESCRIPTION_PJ_FR'];
-                $deses = $row["DESCRIPTION_PJ_ES"];
-				
-		
-			}
-		}
+
+$sql="SELECT * FROM photojournaliste;";
+		          
 ?>
 <!DOCTYPE html>
 <html>
@@ -34,11 +26,21 @@ $query = $db->query("SELECT * FROM photojournaliste;");
 <body>
 <div id="main">
 <div id="cont_2">
-	<h2><?php echo $xml->photoj->$lang;?></h2><hr>  
-	<h3><strong>Elsa Medina</strong></h3></br>
-	<p id="p_al"><?php echo $xml->p_photoj_1_1->$lang;?></p></br>
-	<p id="p_al"><?php echo $xml->p_photoj_1_2->$lang;?></p></br>
-	<p id="p_al"><?php echo $xml->p_photoj_1_3->$lang;?></p></br>
+	<h2><?php echo $xml->photoj->$lang;?></h2><hr> 
+<?php	
+	 foreach ($db->query($sql) as $row) {
+                $desfr = $row['DESCRIPTION_PJ_FR'];
+                $deses = $row["DESCRIPTION_PJ_ES"];
+				$nom = $row['NOM_PJ'];
+				$prenom = $row['PRENOM_PJ'];
+				
+?>				
+			
+		
+	<h3><strong><?php echo $nom.'&nbsp;'.$prenom;?></strong></h3></br>
+	<!--<p id="p_al"><?php //echo $xml->p_photoj_1_1->$lang;?></p></br>
+	<p id="p_al"><?php //echo $xml->p_photoj_1_2->$lang;?></p></br>
+	<p id="p_al"><?php// echo $xml->p_photoj_1_3->$lang;?></p></br>-->
 	<p id="p_al">
 	
 <?php if ($getlang == "fr" || $lang == "fr")
@@ -47,8 +49,8 @@ echo $desfr;
 }
 elseif ($getlang == "es" || $lang == "es")
 {
-echo $deses;
-}?>
+echo $deses.'<br>';
+		   }}?>
 </p></br>
 </div>
 </div>

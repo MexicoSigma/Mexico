@@ -45,6 +45,11 @@
 <es>Etiquetas</es>
 </onglet_7>
 
+<onglet_8>
+<fr>Carte</fr>
+<es>Mapa</es>
+</onglet_8>
+
 <galerie>
 <fr>Galerie</fr>
 <es>Galería</es>
@@ -67,13 +72,27 @@ Hola, bienvenido a nuestra plataforma.
 <p_accueil2>
 <fr>
 Le but de cette création est de recenser et de présenter certaines photographies de photojournalistes présents lors du tremblement de terre de 1985 à Mexico et ce, dans une vision géographique.
-Le développement de cette platforme a été effectué dans le cadre d'une colabration universitaire entre des étudiants du Master SIGMA de Toulouse et l'enseignante-chercheuse Marion Gautreau de l'UFR LLCE (Toulouse) rattachée au laboratoire FRAMESPA.
+Le développement de cette plateforme a été effectué dans le cadre d'une colabration universitaire entre des étudiants du Master SIGMA de Toulouse et l'enseignante-chercheuse Marion Gautreau de l'UFR LLCE (Toulouse) rattachée au laboratoire FRAMESPA.
 </fr>
 <es>
 El objetivo de esta creación es encontrar y presentar algunas fotografías de fotoperiodistas presentes durante el terremoto de 1985 en México, en una visión geográfica y artística.
 El desarrollo de esta plataforma se llevó a cabo en el marco de una colaboración universitaria entre estudiantes del Master SIGMA de Toulouse y la profesora-investigadora Marion Gautreau de la UFR LLCE (Toulouse) adscrita al laboratorio FRAMESPA
 </es>
 </p_accueil2>
+
+<p_accueil3>
+<fr>
+Notre site propose une carte permettant de localiser les photos et de pouvoir imaginer le 
+parcours d'un ou d'une photographe. 
+Une galerie est également disponible. Elle permet de visualiser pleinement les photos par ordre de prise de vue et d'afficher leurs informations.
+Enfin, si vous cherchez un lieu ou un/une photographe spécifique, il est possible d'effetuer une sélection par tag.  
+
+Toutes ces possibilité sont égalmeent disponibles dans le penneaux de menu.
+Merci à vous et bonne visite.
+</fr>
+<es>
+</es>
+</p_accueil3>
 
 <identifiant>
 <fr>Identifiant</fr>
@@ -155,13 +174,18 @@ A partir del año 2000, el trabajo de Elsa Medina se vuelve más documental y ar
 </pano_g>
 
 <s_tags>
-<fr>Sélection par tags</fr>
-<es>Selección por etiquetas</es>
+<fr>Sélection par tags ou par auteur(e)</fr>
+<es>Selección por etiquetas o por autor(a)</es>
 </s_tags>
 
 <recherche>
 <fr>Autre recherche</fr>
 <es>Otra investigación</es>
 </recherche>
+
+<selection_2>
+<fr>Effectuer une séléction par auteur(e) :</fr>
+<es>Hacer una selección por autor(a) :</es>
+</selection_2>
 
 </root>

@@ -40,7 +40,15 @@
         include ("db_config.php");
 
 $tag = isset($_POST['gettags']) ? $_POST['gettags'] : false;
+$tag2 = isset($_POST['author']) ? $_POST['author'] : false;
 //$tarifsel = isset($_POST['tarifValue']) ? $_POST['tarifValue'] : false;
+
+if ($tag2) {
+	$query = $db->query("SELECT * FROM photo, photojournaliste WHERE photojournaliste.ID_PJ=photo.ID_PJ AND 
+	photojournaliste.NOM_PJ='$tag2';");
+}
+
+elseif ($tag) {
 
 if ($getlang == "fr" || $lang == "fr")
 {
@@ -53,7 +61,7 @@ elseif ($getlang == "es" || $lang == "es")
 {    $query = $db->query("SELECT * from sujet, sujetphoto, photo, photojournaliste WHERE photojournaliste.ID_PJ=photo.ID_PJ AND 
 	 sujet.ID_SUJET=sujetphoto.ID_SUJET AND sujetphoto.ID_PHOTO=photo.ID_PHOTO AND 
 	 sujet.LIBELLE_ES='$tag';");       	
-}
+}}
 
         if($query->num_rows > 0){
             while($row = $query->fetch_assoc()){
