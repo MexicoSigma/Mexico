@@ -2,7 +2,8 @@ INSERT INTO `photojournaliste` (`ID_PJ`, `NOM_PJ`, `PRENOM_PJ`, `DESCRIPTION_PJ_
 (1, 'Medina', 'Elsa', '<p> Elsa Medina est une photographe mexicaine résidant dans la ville de Mexico. Elle a commencé la photographie au début des années 1980 après une formation à l’Université de San Diego puis à la UNAM (Université Nationale Autonome du Mexique). Photojournaliste pendant quinze ans -de 1986 à la fin des années 1990- à La Jornada, journal de référence de la gauche mexicaine, elle s’est maintenant tournée vers une photographie plus personnelle. Plus d\'informations <a href="http://blogs.univ-tlse2.fr/miroir/2017/10/20/elsa-medina-castro-un-regard-photographique/">ici</a></p>', '<p> Elsa Medina es una fotógrafa mexicana que vive en la Ciudad de México. Comenzó a fotografiar a principios de la década de 1980 después de capacitarse en la Universidad de San Diego y luego en la UNAM (Universidad Nacional Autónoma de México). Periodista fotográfico durante quince años -desde 1986 hasta finales de los 90- en La Jornada, el diario de referencia de la izquierda mexicana, ahora ha recurrido a una fotografía más personal. Más información <a href="http://blogs.univ-tlse2.fr/miroir/2017/10/20/elsa-medina-castro-un-regard-photographique/">aquí</a></p>');
 
 INSERT INTO `utilisateur` (`ID_USER`, `PSEUDO`, `MDP`, `EMAIL_USER`) VALUES
-(1, 'MarionGautreau', 'Mexico-1985', 'marion.gautreau@yahoo.com');
+(1, '$2y$10$i7LuLKuLVpSYw.5cZURn9e7mmKEUj1HJaECtYxLtxVRF6id13fMaC', '$2y$10$uRqOkpqGz66/47W5lPcGP.x6KbazO0BX7h1Ds6COjOSLwZ4mTQm1e', 'marion.gautreau@yahoo.com');
+
 
 INSERT INTO `sujet` (`ID_SUJET`, `LIBELLE_FR`, `LIBELLE_ES`) VALUES
 (1, 'Batiment(SCOP)', 'Edificio(SCOP)'),
