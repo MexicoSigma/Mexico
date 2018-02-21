@@ -4,6 +4,7 @@ INSERT INTO `photojournaliste` (`ID_PJ`, `NOM_PJ`, `PRENOM_PJ`, `DESCRIPTION_PJ_
 INSERT INTO `utilisateur` (`ID_USER`, `PSEUDO`, `MDP`, `EMAIL_USER`) VALUES
 (1, 'MarionGautreau', 'Mexico-1985', 'marion.gautreau@yahoo.com');
 
+
 INSERT INTO `sujet` (`ID_SUJET`, `LIBELLE_FR`, `LIBELLE_ES`) VALUES
 (1, 'Batiment(SCOP)', 'Edificio(SCOP)'),
 (2, '19 septembre 1985', '19 de septiembre de 1985'),
