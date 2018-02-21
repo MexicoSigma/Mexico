@@ -50,6 +50,16 @@
 <es>Mapa</es>
 </onglet_8>
 
+<onglet_9>
+<fr>Mon Espace</fr>
+<es>Mi Espacio</es>
+</onglet_9>
+
+<connexion>
+<fr>Connexion</fr>
+<es>Conexión</es>
+</connexion>
+
 <galerie>
 <fr>Galerie</fr>
 <es>Galería</es>
@@ -149,22 +159,22 @@ A partir del año 2000, el trabajo de Elsa Medina se vuelve más documental y ar
 </licence>
 
 <description_g>
-<fr>DESCRIPTION</fr>
+<fr>Description</fr>
 <es>Descripción</es>
 </description_g>
 
 <adresse_g>
-<fr>ADRESSE</fr>
+<fr>Adresse</fr>
 <es>Dirección</es>
 </adresse_g>
 
 <date_g>
-<fr>DATE</fr>
+<fr>Date</fr>
 <es>Fecha</es>
 </date_g>
 
 <auteur_g>
-<fr>AUTEUR(E)</fr>
+<fr>Auteur(e)</fr>
 <es>Autor(a)</es>
 </auteur_g>
 
@@ -187,5 +197,35 @@ A partir del año 2000, el trabajo de Elsa Medina se vuelve más documental y ar
 <fr>Effectuer une séléction par auteur(e) :</fr>
 <es>Hacer una selección por autor(a) :</es>
 </selection_2>
+
+<galerie_g>
+<fr>Voir dans la Galerie</fr>
+<es>Ver en la galería</es>
+</galerie_g>
+
+<precedent_g>
+<fr>Précédent</fr>
+<es>Anterior</es>
+</precedent_g>
+
+<suivant_g>
+<fr>Suivant</fr>
+<es>Próximo</es>
+</suivant_g>
+
+<precisionloc>
+<fr>Approximative</fr>
+<es>Aproximada</es>
+</precisionloc>
+
+<legend_cor>
+<fr>Localisation correcte</fr>
+<es>Ubicación correcta</es>
+</legend_cor>
+
+<legend_approx>
+<fr>Localisation approximative</fr>
+<es>Ubicación aproximada</es>
+</legend_approx>
 
 </root>

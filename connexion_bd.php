@@ -1,8 +1,8 @@
 <?php
 $host='localhost';
-$dbname='mexico';
-$username='root';
-$password='Y@w0gan8896';
+$dbname='mexico85';
+$username='mexico85';
+$password='4oahluvluci1_blan';
 $port=3306;
 $dsn = 'mysql:host='.$host.';dbname='.$dbname.';port='.$port.';charset=utf8';
 

@@ -1,16 +1,6 @@
-
-
 <?php
-require("db_config.php");
+require("connexion_bd.php");
 ?>
-<html>
-<head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-</head>
-<body>
 <center>
 <div id="main">
 
@@ -22,7 +12,7 @@ $sql2="SELECT * FROM photojournaliste;";
 echo '<br><label></label><select
 name="gettags">';
 echo '<option label=""></option>';
-foreach ($db->query($sql) as $row) {
+foreach ($myPDO->query($sql) as $row) {
 	
 $libfr = $row['LIBELLE_FR'];
 $libes = $row['LIBELLE_ES'];
@@ -43,7 +33,7 @@ echo '<br><br><br>'.$xml->selection_2->$lang.'<br>';
 echo '<br>';
 echo '<select name="author">';
 echo '<option label=""></option>';
-foreach ($db->query($sql2) as $row) {
+foreach ($myPDO->query($sql2) as $row) {
 
 $nom = $row['NOM_PJ'];
 $prenom = $row['PRENOM_PJ'];
@@ -57,13 +47,8 @@ echo '</select>';
 echo '<br><br><br><button class="btnsearch" type="submit">OK</button>
 </form>';
 
-
-
+$myPDO=null;
+	 
 ?>
-
-
-
 </div>
 </center>
-</body>
-</html>

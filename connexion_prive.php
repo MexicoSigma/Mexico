@@ -1,21 +1,6 @@
-<?php
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
-?>
-
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<meta charset="utf-8" />
-</head>
-<body>
-<?php
-if ( isset ($_SESSION[ 'PSEUDO' ]) && ! empty ($_SESSION[ 'PSEUDO' ]))
-?>
 <center>
 <div id="main">
+<h2><?php echo $xml->connexion->$lang;?></h2><hr>
 <form action= "veriflogin.php" method="post" class="form" role="form">
 
  <div class="form-group">
@@ -30,5 +15,6 @@ if ( isset ($_SESSION[ 'PSEUDO' ]) && ! empty ($_SESSION[ 'PSEUDO' ]))
 </form>
 </div>
 </center>
-</body>
-</html>
+<script>
+document.title ="Page de Connexion";
+</script>
